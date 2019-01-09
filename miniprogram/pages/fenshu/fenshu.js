@@ -412,6 +412,36 @@ Page({
       formxianshi: false
     })
   },
+  exit:function(){
+    var that = this;
+    const db = wx.cloud.database()
+    db.collection('Round').doc(that.data.lastId).update({
+      // data 传入需要局部更新的数据
+      data: {
+        name: {
+          red_name: that.data.redRoundScore,
+          blue_name: that.data.blueRoundScore
+        },
+        time: {
+          end_time: util.formatTime(new Date())
+        },
+        score: {
+          blue_score: that.data.bluescore,
+          red_score: that.data.redscore
+        }
+      },
+      success(res) {
+        console.log('更新成功', res)
+        wx.navigateBack({
+          data:1
+        })
+      },
+      fail(res) {
+        console.log('更新失败', res)
+      }
+    })
+    
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -30,6 +30,10 @@
     
   </div>
 </div>
+<div class='exit'>
+  <image bindtap='exit' class='exittu' src='../../images/1243849.png' mode='widhFx'></image>
+  <!-- <view >切换场地</view> -->
+</div>
 
 <!--比分显示-->
 <!-- <div class="mask" wx:if="{{mask}}">
