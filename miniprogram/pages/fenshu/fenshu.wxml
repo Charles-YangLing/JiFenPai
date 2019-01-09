@@ -1,0 +1,218 @@
+<div class="maskall">
+</div>
+<div class='qiehuan'>
+  <image bindtap='bindplace' class='qiehuantu' src='../../images/589048.png' mode='widhFx'></image>
+  <!-- <view >切换场地</view> -->
+</div>
+<div class='mask' wx:if="{{formxianshi}}">
+  <div class='result'>
+    <div class='re_img'>
+      <image src='../../images/1224409.png' bindtap='closename' mode='widthFix'></image>
+    </div>
+  
+      <form bindsubmit="formSubmit">
+        <div class="tr">
+          <div class="td td-1">{{blueRoundScore}}:</div>
+          <div class="td td-2">
+            <input name='bluename' value='{{blueRoundScore}}' class="input" />
+          </div>
+        </div>
+        <div class="tr">
+          <div class="td td-1">{{redRoundScore}}:</div>
+          <div class="td td-2">
+            <input name='redname' value='{{redRoundScore}}' class="input" />
+          </div>
+        </div>
+      <div>
+        <button class='btn-primary' form-type='submit'>修改名称</button>
+        </div>
+      </form>
+    
+  </div>
+</div>
+
+<!--比分显示-->
+<!-- <div class="mask" wx:if="{{mask}}">
+  <div class="result center">
+    <strong>当前比分</strong>
+    <div class="item red">
+      <div class="name">{{redname}}</div>
+      <div class="win">{{redRoundScore==blueRoundScore?'平 ':redRoundScore>blueRoundScore?'胜 ':'负 '}}</div>
+      <div class="matchnum">{{redRoundScore}}</div>
+      <div class="box">
+        <ul wx:for="{{GroundList}}">
+        <li>{{item.RedScore}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="item blue">
+      <div class="name">{{bluename}}</div>
+      <div class="win">{{redRoundScore==blueRoundScore?'平 ':redRoundScore>blueRoundScore?'负 ':'胜 '}}</div>
+      <div class="matchnum">{{blueRoundScore}}</div>
+      <div class="box">
+       <ul wx:for="{{GroundList}}">
+        <li>{{item.BlueScore}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="btn-group">
+      <a bindtap='Restarturl ' class="btn btn-danger result-home icon">
+        <image src="../../img/icon_05.png" mode='widhFx '></image>
+      </a>
+      <a bindtap='Restart ' class="btn btn-warning result-restart icon">
+        <image src="../../img/icon_04.png" mode='widhFx '></image>
+      </a>
+      <a wx:if="{{!GameOver}}" bindtap='ContinueGame ' class="btn btn-primary result-goon">继续比赛</a>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div> -->
+
+<!--设置面板-->
+<!-- <div class="setting" wx:if="{{setting}}">
+  <div class="content center">
+    <strong>设置</strong>
+    <div class="row">
+        <div bindtap='check ' data-name='ballControl ' data-ckname='{{ballControl}} ' class="item setting-ballControl {{ballControl==true?'active ':' '}}">
+        <div class="box"></div>
+        <div class="name">换发球自动提示</div>
+      </div>
+      <div bindtap='check ' data-name='placeControl ' data-ckname='{{placeControl}} ' class="item setting-placeControl {{placeControl==true?'active ':' '}}">
+        <div class="box"></div>
+        <div class="name">记分牌自动交换</div>
+      </div>
+      <div bindtap='check ' data-name='placeControlManual ' data-ckname='{{placeControlManual}} ' class="item setting-placeControlManual {{placeControlManual==true?'active ':' '}}">
+        <div class="box"></div>
+        <div class="name">记分牌手动交换</div>
+      </div>
+      <div bindtap='check ' data-name='pointControl ' data-ckname='{{pointControl}} ' class="item setting-pointControl {{pointControl==true?'active ':' '}}">
+        <div class="box"></div>
+        <div class="name">局赛点自动提示</div>
+      </div>
+      <div bindtap='check ' data-name='towelControl ' data-ckname='{{towelControl}} ' class="item setting-towelControl {{towelControl==true?'active ':' '}}">
+        <div class="box"></div>
+        <div class="name">擦汗自动提示</div>
+      </div>
+      <!-- <div class="item setting-useControl">
+        <div class="box"></div>
+        <div class="name">记分牌操作提示</div>
+      </div> 
+      <div  bindtap='check ' data-name='timeoutControl ' data-ckname='{{timeoutControl}} ' class="item setting-timeoutControl {{timeoutControl==true?'active ':' '}}">
+        <div class="box"></div>
+        <div class="name">暂停倒计时</div>
+      </div>
+      <div bindtap='check ' data-name='soundControl ' data-ckname='{{soundControl}} ' class="item setting-soundControl {{soundControl==true?'active ':' '}}">
+        <div class="box"></div>
+        <div class="name">比分自动播报</div>
+      </div>
+      <div wx:if="{{total>=5&&Scos==11}}" bindtap='check ' data-name='grabSevenControl ' data-ckname='{{grabSevenControl}} ' class="item setting-grabSevenControl {{grabSevenControl==true?'active ':' '}}">
+        <div class="box"></div>
+        <div class="name">决胜局抢七</div>
+      </div>
+    </div>
+    <div class="btn-group row">
+     <a bindtap='Restarturl ' class="btn btn-danger result-home icon">
+        <image src="../../img/icon_05.png" mode='widhFx '></image>
+      </a>
+      <a bindtap='Restart ' class="btn btn-warning result-restart icon">
+        <image src="../../img/icon_04.png" mode='widhFx '></image>
+      </a>
+      <a bindtap='closesets ' class="btn btn-primary setting-close">关闭</a>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div> -->
+
+<!--倒计时-->
+<!-- <div class="countdown" wx:if="{{countdown}}">
+  <strong class="center number {{second<10?'red ':' '}}">
+    <span id="countdown">{{second}}</span>s</strong>
+  <a  class="btn btn-danger countdown-close" bindtap='closecountdown '>关闭倒计时</a>
+</div> -->
+
+<!--工具栏-->
+<!-- <div class="tool">
+  <ul>
+    <li class="active" bindtap='soundbtn '>
+      <a class="center tool-sound" title="播报比分">
+        <image src="../../img/icon_08.png"></image>
+      </a>
+    </li>
+
+    <li class="{{ballControl==true?'active ':' '}}">
+      <a class="center tool-change" bindtap='bindchange ' title="交换发球">
+        <image src="../../img/icon_02.png" mode='widhFx '></image>
+      </a>
+    </li>
+    <li class="{{placeControlManual==true?'active ':' '}}">
+      <a class="center tool-place" bindtap='bindplace ' title="交换场地">
+        <image src="../../img/icon_06.png" mode='widhFx '></image>
+      </a>
+    </li>
+    <li class="active">
+      <a class="center tool-look" title="查看比分" bindtap='look '>
+        <image src="../../img/icon_03.png" mode='widhFx '></image>
+      </a>
+    </li>
+    <li class="active">
+      <a class="center tool-set" title="功能设置" bindtap='sets '>
+        <image src="../../img/icon_07.png" mode='widhFx '></image>
+      </a>
+    </li>
+  </ul>
+</div> -->
+<!--计分板-->
+<div class="brand-group">
+
+  <div class="colon center">:</div>
+  <div class="towel {{towelControl?redscore+bluescore==6?'active ':' ':' '}}"></div>
+
+  <div class="brand red {{palce==true?'left ':' '}}">
+    <div class="match">
+
+      <div class="center number nickleft" style="font-size:{{matchheight>matchwidth?(matchwidth/4):(matchheight/4)}}px">{{redname}}</div>
+      <strong class="center number" bindtap='changeName' style="font-size:{{matchheight>matchwidth?(matchwidth/2.6):(matchheight/2.6)}}px">{{redRoundScore}}</strong>
+    </div>
+    <div class="score">
+      <!-- <div class="timeout {{rebl?bl==0?'active ':' ':' '}}" data-bl="0" bindtap='bindtimeout ' wx:if="{{timeoutControl}}"></div> -->
+      <div class="ball {{ball==0&&ballControl==true?'show ':' '}}"></div>
+      <div class="item brand-top" animation="{{redanimationjian}}">
+        <strong class="center number" style="font-size:{{scoreheight>scorewidth?scorewidth/1.3:scoreheight/1.3}}px">{{redscore}}</strong>
+      </div>
+      <div class="item brand-center" data-red="true" bindtouchstart='touchStart' bindtouchend="touchEnd" animation="{{redanimation}}">
+        <strong class="center number" style="font-size:{{scoreheight>scorewidth?scorewidth/1.3:scoreheight/1.3}}px">{{redscore}}</strong>
+      </div>
+      <div class="item brand-bottom" animation="{{redanimationjia}}">
+        <strong class="center number" style="font-size:{{scoreheight>scorewidth?scorewidth/1.3:scoreheight/1.3}}px">{{redscore}}</strong>
+      </div>
+      <div class='tips {{pointControl==true?redmatchpoint: ""}} '></div>
+    </div>
+
+  </div>
+
+  <div class="brand blue {{palce==false?'left ':' '}}">
+    <div class="match">
+
+      <div class="center number nickleft" style="font-size:{{matchheight>matchwidth?(matchwidth/4):(matchheight/4)}}px">{{bluename}}</div>
+      <strong class="center number" bindtap='changeName' style="font-size:{{matchheight>matchwidth?matchwidth/2.6:matchheight/2.6}}px">{{blueRoundScore}}</strong>
+    </div>
+
+    <div class="score">
+      <!-- <div class="timeout {{rebl?bl==1?'active ':' ':' '}}" data-bl="1" bindtap='bindtimeout ' wx:if="{{timeoutControl}}"></div> -->
+      <div class="ball {{ball==1&&ballControl==true?'show ':' '}}"></div>
+      <div class="item brand-top" animation="{{blueanimationjian}}">
+        <strong class="center number" style="font-size:{{scoreheight>scorewidth?scorewidth/1.3:scoreheight/1.3}}px">{{bluescore}}</strong>
+      </div>
+      <div class="item brand-center" bindtouchstart='touchStart' bindtouchend="touchEnd" data-red="false" animation="{{blueanimation}}">
+        <strong class="center number" style="font-size:{{scoreheight>scorewidth?scorewidth/1.3:scoreheight/1.3}}px">{{bluescore}}</strong>
+      </div>
+      <div class="item brand-bottom" animation="{{blueanimationjia}}">
+        <strong class="center number" style="font-size:{{scoreheight>scorewidth?scorewidth/1.3:scoreheight/1.3}}px">{{bluescore}}</strong>
+      </div>
+      <div class="tips {{pointControl==true?bluematchpoint:' '}}"></div>
+    </div>
+
+
+  </div>
+</div>

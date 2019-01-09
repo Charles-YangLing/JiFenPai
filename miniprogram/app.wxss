@@ -1,0 +1,582 @@
+/**app.wxss**/
+@charset "utf-8";
+@import 'style/weui.wxss';
+
+page {
+  background-color: #ffffff;
+  font-size: 16px;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.page__hd {
+  padding: 40px;
+}
+
+.page__bd {
+  padding-bottom: 40px;
+}
+
+.page__bd_spacing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page__ft {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.page__title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.page__desc {
+  margin-top: 5px;
+  color: #888;
+  text-align: left;
+  font-size: 14px;
+}
+
+.justify {
+  justify-content: center;
+}
+
+.align {
+  align-items: center;
+}
+
+.wid {
+  height: 5em;
+}
+
+/*框架*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+view {
+  display: block;
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+  box-sizing: border-box;
+}
+
+.row {
+  width: 100%;
+  float: left;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  float: left;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/*首页*/
+
+.shouye {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url()center center no-repeat;
+  background-size: cover;
+}
+
+.shouye image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.biaoti {
+  width: 100%;
+  position: absolute;
+  z-index: 11;
+  left: 38%;
+  top: 13%;
+}
+
+.tupian {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 15%;
+}
+
+.btn {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 70%;
+  text-align: center;
+}
+
+.btn view {
+  padding-bottom: 15px;
+}
+
+.qiehuan {
+  position: fixed;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+  left: 46.5%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.qiehuan.view {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  overflow: hidden;
+  background-color: #00478e;
+  border-radius: 20px 20px 0 0;
+  border-bottom: 2px solid #333;
+}
+
+.qiehuantu {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.duiming {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 40%;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  background-color: rgba(56, 24, 24, 0.842);
+  text-align: center;
+}
+
+.mask .result {
+  position: absolute;
+  width: 60%;
+  height: 65%;
+  left: 20%;
+  top: 20%;
+  background-color: rgb(255, 255, 255);
+  z-index: 3000;
+}
+
+.mask .result .re_img {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  background-color: rgb(255, 251, 251);
+  left: 0;
+}
+
+.mask .result .re_img image {
+  padding-top: 5px;
+  padding-left: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+.mask .result form {
+  position: absolute;
+  top: 30px;
+  background-color: rgb(255, 251, 251);
+  left: 0;
+  width: 100%;
+  height: 40%;
+}
+
+.mask .tr {
+  width: 100%;
+  height: 50%;
+  float: left;
+}
+
+.mask .tr .td {
+  width: 25%;
+  float: left;
+  border-right: 1px solid #eee;
+}
+
+.mask .tr .td-1 {
+  width: 25%;
+  text-align: left;
+  padding: 0 5px 0 15px;
+}
+
+.mask .tr .td-2 {
+  width: 75%;
+  text-align: left;
+}
+
+.mask .item view {
+  width: 20%;
+  height: 30px;
+  border: 0;
+  padding: 0;
+}
+
+.mask .item input {
+  width: 50%;
+  height: 30px;
+  border: 0;
+  padding: 0;
+}
+
+.btn-primary {
+  width: 60%;
+  background: #43dcf0 !important;
+  border: 1px solid #43dcf0 !important;
+  color: #fff !important;
+}
+
+/**/
+
+body {
+  background-color: #333;
+  font-family: arial;
+  font-weight: bold;
+  margin: 0;
+}
+
+div {
+  display: block;
+  box-sizing: border-box;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.show {
+  display: block;
+}
+
+.center {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 30;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.number {
+  font-family: 'TradeGothic';
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+.row {
+  width: 100%;
+  float: left;
+}
+
+.p-t-20 {
+  padding-top: 20px !important;
+}
+
+.p-t-10 {
+  padding-top: 10px !important;
+}
+
+.p-lr-10 {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.nickleft {
+  text-align: left;
+  font-size: 30rpx;
+  color: #fff;
+  padding-left: 30rpx;
+}
+
+/*记分牌*/
+
+.brand-group {
+  position: fixed;
+  z-index: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.brand-group .colon {
+  top: 57%;
+  color: #777;
+  font-size: 120px;
+  z-index: 1;
+  font-family: 'TradeGothic';
+}
+
+.brand-group .towel {
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  top: 19%;
+  left: 50%;
+  margin: -15px 0 0 -15px;
+  width: 30px;
+  height: 30px;
+  background: url(https://mpmininter.uicrm.net/ppimg/towel.png) center center no-repeat;
+  background-size: contain;
+}
+
+.brand-group .towel.active {
+  opacity: 1;
+}
+
+.brand {
+  position: absolute;
+  z-index: 10;
+  top: 8%;
+  left: 55%;
+  width: 40%;
+  height: 84%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.brand .match {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 24%;
+  overflow: hidden;
+  background-color: #00478e;
+  border-radius: 20px 20px 0 0;
+  border-bottom: 2px solid #333;
+}
+
+.brand .match strong {
+  color: #fff;
+  font-size: 56rpx;
+  text-align: center;
+  top: 50%;
+}
+
+.brand .match .btn, .brand .match .prompt {
+  position: absolute;
+  z-index: 100;
+  width: 40%;
+  height: 100%;
+}
+
+.brand .match .btn.matchplus {
+  left: 0;
+}
+
+.brand .match .btn.matchminus {
+  right: 0;
+}
+
+.brand .match .prompt {
+  z-index: 99;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.1;
+}
+
+.brand .match .prompt.matchplus {
+  left: 0;
+}
+
+/* background-image: url(https://mpmininter.uicrm.net/ppimg/plus.png); */
+
+.brand .match .prompt.matchminus {
+  right: 0;
+}
+
+/* background-image: url(https://mpmininter.uicrm.net/ppimg/minus.png); */
+
+.brand .score {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 76%;
+  overflow: hidden;
+  border-radius: 0 0 20px 20px;
+}
+
+.brand .score .item {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #333;
+  background: #06c url(https://mpmininter.uicrm.net/ppimg/brand_bg.png) left bottom repeat-x;
+  background-size: 100% 100%;
+}
+
+.brand .score .item strong {
+  color: #fff;
+  font-size: 180rpx;
+  top: 45%;
+}
+
+.brand .score .btn, .brand .score .prompt {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+}
+
+.brand .score .btn.plus {
+  bottom: 0;
+  height: 51%;
+}
+
+.brand .score .btn.minus {
+  top: 0;
+  height: 49%;
+}
+
+.brand .score .prompt {
+  z-index: 99;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+.brand .score .prompt.plus {
+  bottom: 0;
+  height: 51%;
+  background-position: 5px 5px;
+}
+
+/* background-image: url(https://mpmininter.uicrm.net/ppimg/plus.png); */
+
+.brand .score .prompt.minus {
+  top: 0;
+  height: 49%;
+  background-position: 5px bottom;
+}
+
+/* background-image: url(https://mpmininter.uicrm.net/ppimg/minus.png); */
+
+.brand .score .tips {
+  position: absolute;
+  z-index: 30;
+  opacity: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url(https://mpmininter.uicrm.net/ppimg/tips.png);
+  background-repeat: no-repeat;
+  border-radius: 18px 0 18px 0;
+  background-size: 100% auto;
+}
+
+.brand .score .tips.win {
+  background-position: left center;
+  opacity: 1;
+}
+
+.brand .score .tips.matchpoint {
+  background-position: left bottom;
+  opacity: 1;
+}
+
+.brand .score .tips.gamepoint {
+  background-position: left top;
+  opacity: 1;
+}
+
+.brand .timeout {
+  position: absolute;
+  z-index: 200;
+  right: 0;
+  top: 0;
+  width: 46px;
+  height: 46px;
+  background: url(https://mpmininter.uicrm.net/ppimg/timeout.png) center center no-repeat;
+  background-size: 26px auto;
+  opacity: 0.2;
+}
+
+.brand .timeout.active {
+  opacity: 1;
+}
+
+.brand .item.brand-top {
+  top: -100%;
+}
+
+.brand .item.brand-center {
+  top: 0%;
+}
+
+.brand .item.brand-bottom {
+  top: 100%;
+}
+
+/*红方*/
+
+.brand.left {
+  left: 5%;
+}
+
+.brand.red .match {
+  background-color: #8e0000 !important;
+}
+
+.brand.red .score .item {
+  background-color: #c00 !important;
+}
+/*过渡*/
+.brand, .tips, .towel, .ball{
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}

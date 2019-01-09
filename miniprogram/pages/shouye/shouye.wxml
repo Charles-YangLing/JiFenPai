@@ -1,0 +1,26 @@
+<!--miniprogram/pages/shouye/shouye.wxml-->
+<!-- <view class='shouye'>
+  <view class='biaoti'>
+    <text>简易计分牌</text>
+  </view>
+  <view class='tupian'>
+    <image mode='widthFix' src='../../images/sy02.jpg'></image>
+  </view>
+  <view class='btn'>
+    <view bindtap='Tofenshu'>开始计分</view>
+    <view bindtap='Totoyou'>写给使用的你</view>
+  </view>
+</view> -->
+<view class='page'>
+  <view class='page__hd'>
+    <view class='page__ft' style='font-size:25px;'>简易记分牌</view>
+  </view>
+  <view class='page__ft'>
+    <image mode='widthFix' src='../../images/sy03.jpg'></image>
+  </view>
+  <view class='page__ft'>
+    <view class='padding_down' bindtap='Tofenshu'>开始计分</view>
+    <view class='padding_down' bindtap='ToscoreRecord'>查看对局记录</view>
+    <view class='padding_down' bindtap='Totoyou'>写给使用的你</view>
+  </view>
+</view>

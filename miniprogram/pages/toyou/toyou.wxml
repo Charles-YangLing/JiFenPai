@@ -1,0 +1,16 @@
+<!--miniprogram/pages/toyou/toyou.wxml-->
+<view class='page'>
+  <view class='page__hd'>
+    <view class='page__title'>你好</view>
+    <view class='page__dec'>使用者</view>
+  </view>
+  <view class='page_bd'>
+    <view class="page-body">
+      <view class="page-section page-section-spacing">
+        <view class="text-box">
+          <text>这是一些写给你的话 \n 本产品设计出给广大的体育爱好者所使用 \n 目前只提供像纸质记分牌一模一样的功能 \n 以及写入队伍名字和换边的简单最实用的功能 \n 以后也许会加入记录对局分数，记录时间等功能 \n 当然主要看看有多少人使用和需要啦 \n 你有好的建议或者想开发小程序的可以联系我 \n jifenpai@yeah.net \n</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
