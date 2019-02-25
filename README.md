@@ -10,3 +10,5 @@
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
+#本项目基于微信小程序，利用小程序最新的云开发功能建立了一个轻量的小程序。结构虽小，五脏俱全。可以做到保存登录人的OpenId（但没有获取用户信息，需要可自行添加），读取数据库，对数据库进行增删查，计分动作结束后不让用户自己去修改。算是云开发的练手小程序。
+
